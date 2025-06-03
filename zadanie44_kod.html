@@ -1,0 +1,38 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <html>
+        <body>
+        <div style="color:red;font-size:50px;">
+         <script language="JavaScript">
+         for(i=1;i<=13;i++)
+         {
+            if(i%2==1)
+         document.write("<p style=\"font-size:42px\">Kotelnykova</p>");
+         else
+         document.write("<p style=\"font-size:42px\">Alona</p>");
+         }
+         function okno_zamknij_kote()
+        {
+        window.close()
+        }
+        </script>
+        </div>
+        </body>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

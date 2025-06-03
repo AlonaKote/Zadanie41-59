@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Liczba punktów kratowych</title>
+    </head>
+    <body>
+        <script>
+    function okno_zamknij_kote() 
+    {
+    window.close()
+    }
+            var R = parseInt(prompt("Podaj promień koła R:"));
+            var count = 0;
+    
+            for (var i = -R - 1; i <= R + 1; i++) {
+                for (var j = -R - 1; j <= R + 1; j++) {
+                    if (i * i + j * j <= R * R) {
+                        count++;
+                    }
+                }
+            }
+    
+            document.write("Liczba punktów kratowych N(R) = " + count + "<br>");
+        </script>
+    
+    </body>
+    </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

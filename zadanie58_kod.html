@@ -1,0 +1,62 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Liczby nieparzyste</title>
+    </head>
+    <body>
+        <script>
+    function okno_zamknij_kote() 
+    {
+    window.close()
+    }
+            var liczba1 = parseInt(prompt("Podaj pierwszą liczbę:"));
+            var liczba2 = parseInt(prompt("Podaj drugą liczbę:"));
+    
+            if (liczba1 === liczba2) {
+                confirm("Podane liczby są równe. Brak obliczeń.");
+            } else {
+                var start = Math.min(liczba1, liczba2);
+                var end = Math.max(liczba1, liczba2);
+                var output = "";
+    
+                if (liczba1 < liczba2) {
+                    for (var i = start; i <= end; i++) {
+                        if (i % 2 !== 0) {
+                            output += "<span style='color: green;'>" + i + "</span><br>";
+                        }
+                    }
+                } else {
+                    for (var i = end; i >= start; i--) {
+                        if (i % 2 !== 0) {
+                            output += "<span style='color: blue; font-size: 50%;'>" + i + "</span><br>";
+                        }
+                    }
+                }
+    
+                document.write(output);
+            }
+        </script>
+    
+    </body>
+    </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

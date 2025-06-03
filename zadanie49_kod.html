@@ -1,0 +1,39 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <!DOCTYPE html>
+
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="utf-8" />
+            <title></title>
+        </head>
+        <body>
+            <script>
+                let n_kote = prompt("wpisz n");
+                let silnia_kote = 1;
+                let ilo = 1;
+                for(let i = 1; i <= n_kote; i++){
+                    ilo *= i;
+                }
+                document.write(n_kote+"! = "+ilo);
+            </script>
+        </body>
+    </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

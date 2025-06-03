@@ -1,0 +1,42 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <!DOCTYPE html> 
+    <html lang="pl"> 
+    <head>  
+    <meta charset="utf-8"> 
+    <title>  Przykład użycia pętli </title> 
+    <script language="JavaScript"> 
+    a=(11 % 4)+5;
+    b=(5 % 6)+20;
+    for (let i = 0; i < b; i++) { 
+      document.write("*"+"&nbsp");
+    }
+    for (let i = 0; i < a; i++) { 
+      document.write("*"+"&nbsp"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+"*"+"<br>");
+    }
+    for (let i = 0; i < b; i++) { 
+      document.write("*"+"&nbsp");
+    }
+    </script> 
+    </head>  
+    <body>  
+    </body>  
+    </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

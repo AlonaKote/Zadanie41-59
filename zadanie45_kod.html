@@ -1,0 +1,45 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <html>
+        <body>
+        <div style="color:blue;font-size:50px;">
+        <script language="JavaScript">
+            var x = prompt("podaj liczbę x=", "");
+            var a = parseInt(x);
+            
+            if (a % 2 == 0) {
+                for (i = 1; i <= 13; i++) {
+                    document.write("<p style='font-size:42px; color:blue;'>Kotelnykova</p>");
+                }
+            } else {
+                for (i = 1; i <= 13; i++) {
+                    document.write("<p style='font-size:42px; color:green;'>Alona</p>");
+                }
+            }
+        
+            function okno_zamknij_kote() {
+                window.close();
+            }
+        </script>
+        </div>
+        </body>
+        </html>
+        
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

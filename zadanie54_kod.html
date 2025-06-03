@@ -1,0 +1,58 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_kote()
+ {
+ window.close()
+ }
+
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="kote" cols="80" rows="20" readonly>
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rysowanie prostokąta</title>
+    </head>
+    <body>
+        <div style="font-family: monospace;">
+            <script>
+    function okno_zamknij_kote() 
+    {
+    window.close()
+    }
+                var imie = prompt("Podaj swoje imię:");
+                var nazwisko = prompt("Podaj swoje nazwisko:");
+    
+                var a_kote = (nazwisko.length % 4) + 5;
+                var b_kote = (imie.length % 6) + 20;
+    
+                var prostokat = "";
+    
+    
+                prostokat += "*".repeat(a_kote + 2) + "<br>";
+    
+                for (var i = 0; i < b_kote; i++) {
+                    prostokat += "*";
+                    prostokat += "&nbsp;".repeat(a_kote);
+                    prostokat += "*<br>";
+                } 
+    
+                prostokat += "*".repeat(a_kote + 2) + "<br>";
+    
+                document.write(prostokat);
+            </script>
+        </div>
+    
+    </body>
+    </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_kote()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
